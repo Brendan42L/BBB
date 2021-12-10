@@ -1,5 +1,5 @@
 
-<?php include 'sendemail.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,6 +12,9 @@
     <title>Beauty By Brendan</title>
     <link rel="icon" href="/img/logo-favicon.png" type="image/png" />
     <link rel="shortcut icon" href="/favicon.ico" />
+    <script>
+      <?php include 'sendemail.php'; ?>
+    </script>
     <script defer src="https://use.fontawesome.com/db2a392745.js"></script>
     <style>
       * {
@@ -376,6 +379,7 @@
       if (window.history.replaceState) {
         window.history.replaceState(null, null, window.location.href);
       }
+      <?php include 'sendemail.php'; ?>
     </script>
     <script src="js/app.js"></script>
   </body>
